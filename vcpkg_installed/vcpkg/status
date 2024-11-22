@@ -1,0 +1,165 @@
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fc7335e1bf0a1781e8df106d513df9fffcd29a7203042ecb7769877c12f22cc3
+Status: purge ok not-installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e7a65ae1f4b3cdd254bd1b7c39ede22d726692b1443bc3a4da15497fcdc03426
+Description: A compression library
+Status: purge ok not-installed
+
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 2a1ab1c90b89f88d47e3c0f025a250c49a8210c058292de0a2351c42f2262ec7
+Status: purge ok not-installed
+
+Package: curl
+Version: 8.11.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 76d0bdcecb33db9e1c6efbbe0abfccc3c5debe8d17456b7c254cd9a191ad0909
+Description: A library for transferring data with URLs
+Default-Features: non-http, ssl
+Status: purge ok not-installed
+
+Package: curl
+Feature: non-http
+Architecture: x64-windows
+Multi-Arch: same
+Description: Enables protocols beyond HTTP/HTTPS/HTTP2
+Status: purge ok not-installed
+
+Package: curl
+Feature: schannel
+Architecture: x64-windows
+Multi-Arch: same
+Description: SSL support (Secure Channel)
+Status: purge ok not-installed
+
+Package: curl
+Feature: ssl
+Architecture: x64-windows
+Multi-Arch: same
+Description: Default SSL backend
+Status: purge ok not-installed
+
+Package: curl
+Feature: sspi
+Architecture: x64-windows
+Multi-Arch: same
+Description: SSPI support
+Status: purge ok not-installed
+
+Package: fmt
+Version: 11.0.2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 65bd550fb0ec75e0e543115a043aaa3806d580158ccf1111582abbfcbf6bf757
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: purge ok not-installed
+
+Package: vcpkg-cmake
+Version: 2024-04-23
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 1e15030b20a40d5c59d1ba928fa9fd4d2e6f177c5e32b95cb7a71c27e6936260
+Status: install ok installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2024-09-22
+Depends: vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: faeb93dd18ed96d487ea2f34806b57de3546f50062a82aaee36f7efdca99e1f2
+Status: install ok installed
+
+Package: vcpkg-cmake-config
+Version: 2024-05-23
+Architecture: x64-linux
+Multi-Arch: same
+Abi: c3ad4c472be21665fa69cc434f7b4cbe8ccb8c010d7447169d53889ac15dbed2
+Status: install ok installed
+
+Package: openssl
+Version: 3.4.0
+Depends: vcpkg-cmake, vcpkg-cmake-config, vcpkg-cmake-get-vars
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 73d6468c8ad654df901d40d0fe240d1ed3f2acc322f5d361fc4612aad855f8d0
+Description: OpenSSL is an open source project that provides a robust, commercial-grade, and full-featured toolkit for the Transport Layer Security (TLS) and Secure Sockets Layer (SSL) protocols. It is also a general-purpose cryptography library.
+Status: install ok installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 64d29a2260e2901af7eef2a87e990d459073c975ff6521df0410df370f762d50
+Description: A compression library
+Status: install ok installed
+
+Package: curl
+Version: 8.11.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 0104ff0206db94f4abe5a3e0ff0ba43de8805ebfbd398f7b340afa6ec8fb3b48
+Description: A library for transferring data with URLs
+Default-Features: non-http, ssl
+Status: install ok installed
+
+Package: curl
+Feature: non-http
+Architecture: x64-linux
+Multi-Arch: same
+Description: Enables protocols beyond HTTP/HTTPS/HTTP2
+Status: install ok installed
+
+Package: curl
+Feature: openssl
+Depends: openssl
+Architecture: x64-linux
+Multi-Arch: same
+Description: SSL support (OpenSSL)
+Status: install ok installed
+
+Package: curl
+Feature: ssl
+Architecture: x64-linux
+Multi-Arch: same
+Description: Default SSL backend
+Status: install ok installed
+
+Package: fmt
+Version: 11.0.2
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 7506aaaf9388083651b5146656e175262f80a9f294ac10a05e5908ea184371dd
+Description: {fmt} is an open-source formatting library providing a fast and safe alternative to C stdio and C++ iostreams.
+Status: install ok installed
+
+Package: nlohmann-json
+Version: 3.11.3
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-linux
+Multi-Arch: same
+Abi: 85844a489c33d7cb8fe87750267196c20d90cbd6ac8948e347bfe751525f6e7a
+Description: JSON for Modern C++
+Status: purge ok not-installed
+
